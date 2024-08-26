@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores Horizontais</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .color-strip {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: white;
+            text-shadow: 1px 1px 2px black;
+        }
+        .red {
+            background-color: #ff0000;
+        }
+        .green {
+            background-color: #00ff08;
+        }
+        .blue {
+            background-color: #0099ff;
+        }
+        .btn-container {
+            text-align: center;
+            margin: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            background-color: #509BCE;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background-color: #007bb5;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="color-strip red">Vermelho</div>
+        <div class="color-strip green">Verde</div>
+        <div class="color-strip blue">Azul</div>
+    </div>
+
+    <div class="btn-container">
+        <a href="index3.html" class="btn">Próxima Página</a>
+    </div>
+
+</body>
+</html>

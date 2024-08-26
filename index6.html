@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página da Olivia</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #6a0dad; /* Cor de fundo roxa */
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+        .menu-bar {
+            width: 100%;
+            height: 40px;
+            background: #333; /* Cor da barra de menu superior */
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        .menu-bar .menu-items {
+            display: flex;
+            gap: 20px;
+        }
+        .menu-bar .menu-items a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: calc(100vh - 100px); /* Ajusta a altura para excluir a barra de menu e o botão */
+            padding-top: 50px; /* Espaço abaixo da barra de menu */
+            position: relative;
+        }
+        .content img {
+            border-radius: 15px;
+            width: 300px; /* Ajuste o tamanho da imagem conforme necessário */
+            height: auto;
+        }
+        .content .button-container {
+            position: absolute;
+            bottom: 20px;
+        }
+        .content .button-container a {
+            text-decoration: none;
+            color: #fff;
+            background: #333; /* Cor do botão */
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .content .button-container a:hover {
+            background: #555; /* Cor do botão ao passar o mouse */
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-bar">
+        <div class="menu-items">
+            <a href="#">Shows</a>
+            <a href="#">Agenda</a>
+            <a href="#">Fotos</a>
+        </div>
+    </div>
+    <div class="content">
+        <img src="olivia.png" alt="Foto Centralizada">
+        <div class="button-container">
+            <a href="index7.html">Próxima Página</a>
+        </div>
+    </div>
+</body>
+</html>

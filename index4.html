@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolinhas</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+            overflow: hidden; /* Permite que as bolinhas fiquem fora da tela */
+        }
+        .circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            position: absolute;
+        }
+        .red {
+            background-color: #911717;
+        }
+        .blue {
+            background-color: #509BCE;
+        }
+        .green {
+            background-color: #4CAF50;
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        function getRandomInt(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min;
+        }
+
+        function createBall(color) {
+            const ball = document.createElement('div');
+            ball.className = `circle ${color}`;
+            ball.style.top = `${getRandomInt(0, window.innerHeight - 40)}px`;
+            ball.style.left = `${getRandomInt(0, window.innerWidth - 40)}px`;
+            document.body.appendChild(ball);
+        }
+
+        const colors = ['red', 'blue', 'green'];
+        const numberOfBalls = 30;
+
+        for (let i = 0; i < numberOfBalls; i++) {
+            const color = colors[getRandomInt(0, colors.length - 1)];
+            createBall(color);
+        }
+    </script>
+
+    <a href="index5.html">Próxima Página</a>
+
+</body>
+</html>
