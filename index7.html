@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Área de Trabalho do macOS</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #f0f0f0; /* Cor de fundo da área de trabalho */
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .menu-bar {
+            width: 100%;
+            height: 40px;
+            background: #333; /* Cor da barra de menu superior */
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            box-shadow: 0 1px 5px rgba(0,0,0,0.3);
+            position: fixed;
+            top: 0;
+            left: 0;
+        }
+        .menu-bar .logo {
+            font-size: 18px;
+            font-weight: bold;
+        }
+        .menu-bar .menu-items {
+            display: flex;
+            gap: 20px;
+        }
+        .menu-bar .menu-items a {
+            color: #fff;
+            text-decoration: none;
+        }
+        .desktop {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 50px; /* Espaço abaixo da barra de menu */
+            position: relative;
+            background: url('your-wallpaper.jpg') no-repeat center center; /* Papel de parede da área de trabalho */
+            background-size: cover;
+        }
+        .dock {
+            width: 100%;
+            height: 60px;
+            background: #333; /* Cor do dock */
+            color: #fff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            box-shadow: 0 -1px 5px rgba(0,0,0,0.3);
+            gap: 20px; /* Espaçamento entre ícones no dock */
+        }
+        .dock .dock-item {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: red; /* Cor padrão para bolinhas */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        .dock .dock-item:nth-child(2) {
+            background: blue;
+        }
+        .dock .dock-item:nth-child(3) {
+            background: green;
+        }
+        .dock .dock-item:nth-child(4) {
+            background: yellow;
+        }
+        .dock .dock-item:nth-child(5) {
+            background: purple;
+        }
+        .dock .dock-item:nth-child(6) {
+            background: orange;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu-bar">
+        <div class="logo">MacOS</div>
+        <div class="menu-items">
+            <a href="#">Aplicativos</a>
+            <a href="#">Documentos</a>
+            <a href="#">Lixeira</a>
+        </div>
+    </div>
+    <div class="desktop">
+        <!-- Espaço reservado para o papel de parede e área de trabalho limpa -->
+    </div>
+    <div class="dock">
+        <div class="dock-item"></div>
+        <div class="dock-item"></div>
+        <div class="dock-item"></div>
+        <div class="dock-item"></div>
+        <div class="dock-item"></div>
+        <div class="dock-item"></div>
+    </div>
+</body>
+</html>
